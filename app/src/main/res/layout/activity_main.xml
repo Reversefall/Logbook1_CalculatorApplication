@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Button5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:useDefaultMargins="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/Button7"
+            style="@style/CalcButton"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/Button8"
+            style="@style/CalcButton"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/Button9"
+            style="@style/CalcButton"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/ButtonDivide"
+            style="@style/CalcButton"
+            android:text="/" />
+
+
+        <Button
+            android:id="@+id/Button4"
+            style="@style/CalcButton"
+            android:text="4" />
+
+        <Button
+            style="@style/CalcButton"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/Button6"
+            style="@style/CalcButton"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/ButtonMutiply"
+            style="@style/CalcButton"
+            android:text="*" />
+
+
+        <Button
+            android:id="@+id/Button1"
+            style="@style/CalcButton"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/Button2"
+            style="@style/CalcButton"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/Button3"
+            style="@style/CalcButton"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/ButtonMinus"
+            style="@style/CalcButton"
+            android:text="-" />
+
+
+        <Button
+            android:id="@+id/ButtonDelete"
+            style="@style/CalcButton"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/Button0"
+            style="@style/CalcButton"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/ButtonEqual"
+            style="@style/CalcButton"
+            android:text="=" />
+
+        <Button
+            android:id="@+id/ButtonPlus"
+            style="@style/CalcButton"
+            android:text="+" />
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/Solution_textview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="end"
+        android:text=""
+        android:textColor="@android:color/darker_gray"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/result_textview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="end"
+        android:text="0"
+        android:textColor="@android:color/black"
+        android:textSize="64sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Solution_textview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
