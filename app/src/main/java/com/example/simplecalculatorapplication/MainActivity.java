@@ -9,10 +9,10 @@ import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private static final char ADDITION = '+';
-    private static final char SUBTRACTION = '-';
-    private static final char MULTIPLICATION = '*';
-    private static final char DIVISION = '/';
+    private static final char plus = '+';
+    private static final char subtract = '-';
+    private static final char mutilple = '*';
+    private static final char division = '/';
 
     private char currentSymbol;
 
@@ -64,10 +64,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         else if (id == R.id.Button7) inputDisplay.setText(inputDisplay.getText() + "7");
         else if (id == R.id.Button8) inputDisplay.setText(inputDisplay.getText() + "8");
         else if (id == R.id.Button9) inputDisplay.setText(inputDisplay.getText() + "9");
-        else if (id == R.id.ButtonPlus) handleOperator(ADDITION);
-        else if (id == R.id.ButtonMinus) handleOperator(SUBTRACTION);
-        else if (id == R.id.ButtonMutiply) handleOperator(MULTIPLICATION);
-        else if (id == R.id.ButtonDivide) handleOperator(DIVISION);
+        else if (id == R.id.ButtonPlus) handleOperator(plus);
+        else if (id == R.id.ButtonMinus) handleOperator(subtract);
+        else if (id == R.id.ButtonMutiply) handleOperator(mutilple);
+        else if (id == R.id.ButtonDivide) handleOperator(division);
         else if (id == R.id.ButtonEqual) handleEquals();
         else if (id == R.id.ButtonDelete) handleClear();
     }
@@ -123,16 +123,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 inputDisplay.setText(null);
 
                 switch (currentSymbol) {
-                    case ADDITION:
+                    case plus:
                         firstValue = this.firstValue + secondValue;
                         break;
-                    case SUBTRACTION:
+                    case subtract:
                         firstValue = this.firstValue - secondValue;
                         break;
-                    case MULTIPLICATION:
+                    case mutilple:
                         firstValue = this.firstValue * secondValue;
                         break;
-                    case DIVISION:
+                    case division:
                         if (secondValue == 0) {
                             outputDisplay.setText("Cannot divide by zero");
                             firstValue = Double.NaN;
